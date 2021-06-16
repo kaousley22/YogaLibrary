@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <script src="jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/stylesheet.css">
+    <link rel="stylesheet" href="assets/stylesheet.css">
+    <title>Yogi's Library</title>
+</head>
+
+
+<body>
+    <div class="container-fluid mb-5">
+        <!-- BUTTON BUTTON, LOGO, SEARCHBAR -->
+        <nav class="navbar fixed-top p-3 mb-5 bg-dark ">
+            <button class="btn dropdown-toggle bg-secondary float-left menu" data-toggle="dropdown" href="#"><span
+                    class="text-info">Main Menu</span></button>
+            <div class="dropdown-menu bg-secondary">
+                <a class="dropdown-item text-light" href="index.html">Home</a>
+                <a class="dropdown-item text-light" href="index.html#commit">Special Conditions</a>
+                <a class="dropdown-item text-light" href="index.html#commit">Tools For Practice</a>
+                <a class="dropdown-item text-light" href="index.html#commit">Nutritional Tips</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-info" id="create" href="library.html#galleryOfPoses">Create Your Own
+                    Routine</a>
+
+
+                <!-- <a class="dropdown-item text-info" id="create" href="library.html#galleryOfPoses">Create Your Own
+                    Routine</a> -->
+
+            </div>
+
+            <h1 class="logo" style="color : var(--yellowCustom)">Yogi's Library</h1>
+
+            <input class="form-control w-25 text-light bg-secondary float-right" id="input"
+                placeholder="Enter Search..." type="text">
+
+        </nav>
+        <!-- BUTTON BUTTON, LOGO, SEARCHBAR -->
+
+
+        <!--GALLERY OF POSES-->
+        <div class="container-fluid mb-5">
+            <div class="row pt-5 mt-5 mb-5" width='1000px' id="galleryOfPoses">
+
+                <!-- BLANK DIV -->
+                <div class="col-2 mt-5" id="col1"></div>
+
+
+                <!-- GALLERY/LIBRARY OF POSES SHOW UP THI DIV -->
+                <div class="card-columns col-8 pr-5 mt-5 mr-5 w-25 h-75 bg-secondary basic" id="basic"> </div>
+
+                <!-- ROUTINE  -->
+                <div class="col bg-secondary p-0 mt-5 w-100" id="routine">
+                    <div id="routineBtns">
+                        <button class="btn btn-sm btn-info" type="button" id="doRoutine">
+                            Do This Routine</button>
+                        <button class="btn btn-sm btn-info" type="button" id="addMore">Add
+                            More </button>
+                        <button class="btn btn-sm btn-info" type="button" id="clearRoutine">Clear All</button>
+                        <button class="btn btn-sm btn-dark text-light float-right" type="button" id="close">✕</button>
+                    </div>
+                </div>
+                <!-- ROUTINE  -->
+
+            </div>
+        </div>
+        <!-- END GALLERY OF POSES-->
+
+
+
+
+
+
+
+
+        <!--MODAL-->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title"></h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal Header -->
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h5></h5>
+
+                    </div>
+                    <!-- Modal body -->
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal"></button>
+                        <h5></h5>
+                    </div>
+                    <!-- Modal footer -->
+                </div>
+            </div>
+        </div>
+        <!--MODAL-->
+
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="fixed-bottom bg-dark footer mt-5">
+        <small class="text-light float-right p-3">Copyright &copy 2020</small>
+    </footer>
+    <!-- FOOTER -->
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script> -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <script src="javascript/yoga.js"></script>
+    <script src="javascript/main.js"></script>
+</body>
+
+</html>
